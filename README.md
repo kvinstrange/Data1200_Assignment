@@ -12,9 +12,8 @@ This project contains Python code for preprocessing data imported from a SQL dat
 
 ### Installing
 1. Clone the repository:
-   (https://github.com/kvinstrange/Data1202_Assignment.git)
+   https://github.com/kvinstrange/Data1202_Assignment.git
    
-
 3. Install required Python libraries:
 ```bash
  pip install pandas sqlalchemy pymysql
