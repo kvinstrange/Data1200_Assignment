@@ -112,9 +112,9 @@ Kevin Vania
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgement
--Thanks to Durham College for the guidance and resources provided.
--The developers of pandas, pymysql, and sqlalchemy for their excellent libraries.
--Special thanks to the open-source community for the libraries and tools used in this project.
+- Thanks to Durham College for the guidance and resources provided.
+- The developers of pandas, pymysql, and sqlalchemy for their excellent libraries.
+- Special thanks to the open-source community for the libraries and tools used in this project.
 
 
 
