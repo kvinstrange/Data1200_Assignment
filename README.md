@@ -12,7 +12,7 @@ This project contains Python code for preprocessing data imported from a SQL dat
 
 ### Installing
 1. Clone the repository:
- git clone [(https://github.com/kvinstrange/Data1200_Assignment.git)](https://github.com/kvinstrange/Data1200_Assignment.git)
+ git clone (https://github.com/kvinstrange/Data1200_Assignment.git)
  cd vgsales-analysis
 
 2. Install required Python libraries:
