@@ -105,7 +105,8 @@ print(between_00_05)
 This project does not have a deployment step as it is intended for local analysis and testing.
 
 ## Author
-Kevin Vania
+- Kevin Vania
+- GitHub: kvinstrange
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
