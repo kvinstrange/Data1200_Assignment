@@ -24,8 +24,8 @@ This project contains Python code for preprocessing data imported from a SQL dat
  Create a database and import the vgsales table.
    
 
-## Running the tests
-### Breakdown of Tests
+## Running the codes
+### Breakdown of code
 ### Part 1: Importing a CSV File
 - Reads a CSV file containing video game sales data.
 - Filters the DataFrame to find games launched between 2000-2005.
