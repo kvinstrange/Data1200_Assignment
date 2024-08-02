@@ -12,7 +12,7 @@ This project contains Python code for preprocessing data imported from a SQL dat
 
 ### Installing
 1. Clone the repository:
- git clone https://github.com/name/vgsales-analysis.git
+ git clone [https://github.com/name/vgsales-analysis.git](https://github.com/kvinstrange/Data1200_Assignment.git)
  cd vgsales-analysis
 
 2. Install required Python libraries:
@@ -43,7 +43,7 @@ print(between_00_05)
 import pandas as pd
 import pymysql
 from sqlalchemy import create_engine
-engine = create_engine('mysql+pymysql://user10:foo@localhost/ap')
+engine = create_engine('mysql+pymysql://username:password@host:port/database')
 conn = engine.connect()
 df = pd.read_sql_query("SELECT * FROM data1202.vgsales", conn)
 print(df.head())
