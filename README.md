@@ -14,12 +14,12 @@ This project contains Python code for preprocessing data imported from a SQL dat
 1. Clone the repository:
    https://github.com/kvinstrange/Data1202_Assignment.git
    
-3. Install required Python libraries:
+2. Install required Python libraries:
 ```bash
  pip install pandas sqlalchemy pymysql
  ```
 
-4. Set up MySQL:
+3. Set up MySQL:
  Install MySQL server.
  Create a database and import the vgsales table.
    
@@ -105,7 +105,7 @@ print(between_00_05)
 This project does not have a deployment step as it is intended for local analysis and testing.
 
 ## Author
-- Kevin Vania
+### Kevin Vania
 - GitHub: kvinstrange
 
 ## License
