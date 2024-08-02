@@ -12,14 +12,14 @@ This project contains Python code for preprocessing data imported from a SQL dat
 
 ### Installing
 1. Clone the repository:
- git clone (https://github.com/kvinstrange/Data1200_Assignment.git)
- cd vgsales-analysis
-
-2. Install required Python libraries:
- pip install pandas sqlalchemy pymysql
 ```bash
-    pip install pandas pymysql sqlalchemy
+    git clone (https://github.com/kvinstrange/Data1200_Assignment.git)
     ```
+
+3. Install required Python libraries:
+```bash
+ pip install pandas sqlalchemy pymysql
+ ```
 
 4. Set up MySQL:
  Install MySQL server.
@@ -32,11 +32,13 @@ This project contains Python code for preprocessing data imported from a SQL dat
 - Reads a CSV file containing video game sales data.
 - Filters the DataFrame to find games launched between 2000-2005.
 
+```python
 import pandas as pd
 input_file_path = r"C:\Users\Durham\Desktop\Duraham\Courses\data1202\vgsales.csv"
 input_raw_data = pd.read_csv(input_file_path)
 between_00_05 = input_raw_data[(input_raw_data["Year"] >= 2000) & (input_raw_data["Year"] <= 2005)]
 print(between_00_05)
+```
 
 ### Part 2: Running Simple Queries
 - Connects to a SQL database.
