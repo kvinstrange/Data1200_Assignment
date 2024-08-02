@@ -12,7 +12,7 @@ This project contains Python code for preprocessing data imported from a SQL dat
 
 ### Installing
 1. Clone the repository:
-    git clone (https://github.com/kvinstrange/Data1200_Assignment.git)
+    git clone (https://github.com/kvinstrange/Data1202_Assignment.git)
    
 
 3. Install required Python libraries:
@@ -112,9 +112,9 @@ Kevin Vania
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgement
-Thanks to Durham College for the guidance and resources provided.
-The developers of pandas, pymysql, and sqlalchemy for their excellent libraries.
-Special thanks to the open-source community for the libraries and tools used in this project.
+-Thanks to Durham College for the guidance and resources provided.
+-The developers of pandas, pymysql, and sqlalchemy for their excellent libraries.
+-Special thanks to the open-source community for the libraries and tools used in this project.
 
 
 
