@@ -1,5 +1,6 @@
 # Python with MySQL 
-In this Lab, you will learn how to use Python (pandas) for preprocessing your data when Imported from a SQL database and form a csv local file. By the end of this lab, you will be familiar with the connection methods and how you can run SQL Queries using Python.
+This project contains Python code for preprocessing data imported from a SQL database using pandas. The code includes steps for importing a CSV file, running simple and complex SQL queries, filtering data, and answering practice questions.
+
 ## Getting Started
 
 ### Prerequisites
@@ -10,23 +11,35 @@ In this Lab, you will learn how to use Python (pandas) for preprocessing your da
 - MySQL database
 
 ### Installing
-1. Install Python 3.x from [python.org](https://www.python.org/).
-2. Install the required libraries using pip:
-   ```bash
-   pip install pandas pymysql SQLAlchemy
+1. Clone the repository:
+ git clone https://github.com/name/vgsales-analysis.git
+ cd vgsales-analysis
+
+2. Install required Python libraries:
+ pip install pandas sqlalchemy pymysql
+
+3. Set up MySQL:
+ Install MySQL server.
+ Create a database and import the vgsales table.
+   
 
 ## Running the tests
 ### Breakdown of Tests
-### Part 1: Import CSV File
-This part demonstrates how to import a CSV file and filter data based on specific years.
+### Part 1: Importing a CSV File
+- Reads a CSV file containing video game sales data.
+- Filters the DataFrame to find games launched between 2000-2005.
+
 import pandas as pd
 input_file_path = r"C:\Users\Durham\Desktop\Duraham\Courses\data1202\vgsales.csv"
 input_raw_data = pd.read_csv(input_file_path)
 between_00_05 = input_raw_data[(input_raw_data["Year"] >= 2000) & (input_raw_data["Year"] <= 2005)]
 print(between_00_05)
 
-### Part 2: Run Simple Queries
-This part shows how to connect to a MySQL database and run simple SQL queries.
+### Part 2: Running Simple Queries
+- Connects to a SQL database.
+- Runs a simple query to read data into a DataFrame.
+- Provides basic data exploration, including shape, size, column names, and data types.
+
 import pandas as pd
 import pymysql
 from sqlalchemy import create_engine
@@ -40,8 +53,9 @@ print(df.columns)
 print(df.dtypes)
 print(df.info())
 
-### Part 3: Run Complex Queries
-This part demonstrates how to run complex SQL queries to aggregate and analyze data.
+### Part 3: Running Complex Queries
+- Runs a complex SQL query to calculate sales and market share for Action games released after 2005.
+
 complex_df = pd.read_sql_query('''SELECT
     Round(SUM(NA_Sales)) as 'NA_Sales',
     ROUND(SUM(EU_Sales)) as 'EU_Sales',
@@ -56,7 +70,10 @@ WHERE
 print(complex_df.head())
 
 ### Part 4: WHERE in Python
-This part shows how to filter data using pandas.
+- Filters the DataFrame for specific conditions, such as games published by Nintendo.
+- Finds the maximum sales of Action games in the EU after 2005.
+
+
 nintendo_games = df[df['Publisher'] == 'Nintendo']
 print(nintendo_games.head())
 print("The number of Nintendo games is: " + str(len(nintendo_games)))
@@ -68,6 +85,10 @@ print("The max sales of action games in EU after 2005 is: " + str(action_05.EU_S
 between_00_05 = df[(df["Year"] >= 2000) & (df["Year"] <= 2005)]
 print(between_00_05)
 
+### Part 5: Practice Questions
+- Practice tasks include showing all databases, retrieving sales data between 2000-2005, and identifying data types and column names for the filtered DataFrame.
+
+  
 ## Deployment
 This project does not have a deployment step as it is intended for local analysis and testing.
 
@@ -78,5 +99,15 @@ Kevin Vania
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgement
-Durham College for providing the dataset and support.
+Thanks to Durham College for the guidance and resources provided.
+The developers of pandas, pymysql, and sqlalchemy for their excellent libraries.
+Special thanks to the open-source community for the libraries and tools used in this project.
+
+
+
+
+
+
+
+
 
